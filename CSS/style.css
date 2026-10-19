@@ -1,0 +1,102 @@
+body {
+    background-color: #f4f1ea;
+    color: #14162B;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    color: #c4531a;
+    font-size: 40px;
+}
+
+h2 {
+    color: #14162B;
+}
+
+a{
+    color: #c4531a;
+}
+
+footer {
+    text-align: center;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+th, td {
+    border: 1px dotted #14162B;
+    padding: 8px 16px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #ff8a4c;
+}
+
+nav {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #14162B;
+    color: white;
+    padding: 16px 32px;
+}
+
+nav {
+    display: flex;
+    gap:24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.gosto {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.gosto li {
+    background-color: #ff8a4c;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 8px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+}
+
+
