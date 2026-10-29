@@ -18,39 +18,43 @@
     </header>
 
     <main>
-       <h1>Fale comigo</h1>
-       <form>
-        <p>
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" required>
-        </p>
-        <p>
-            <label for="tel">Telefone</label>
-            <input type="tel" id="telefone" name="telefone">
-        </p>
-        <p>
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required>
-        </p>
-        <p>
-            <label for="assunto">Assunto</label>
-            <select name="assunto" id="assunto">
-                <option>Orçamento</option>
-                <option>Dúvida</option>
-                <option>Outro</option>
-            </select>
-        </p>
-        <p>
-            <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem"></textarea>
-        </p>
-        <button type="submit">Enviar</button>
-       </form>
+        <section>
+            <h1>Fale comigo</h1>
+        <form id="formulario">
+                 <p>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                 </p>
+                 <p>
+                        <label for="tel">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone">
+                 </p>
+                 <p>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                 </p>
+                 <p>
+                        <label for="assunto">Assunto</label>
+                        <select name="assunto" id="assunto">
+                            <option>Orçamento</option>
+                            <option>Dúvida</option>
+                            <option>Outro</option>
+                        </select>
+                 </p>
+                 <p>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem"></textarea>
+                 </p>
+                 <button type="submit">Enviar</button>
+                </form>
+                <p id="resposta"></p>
+            </section>
     </main>
 
     <footer>
         <p>2026 - Gabriel</p>
     </footer>
+    <script src="js/contato.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
