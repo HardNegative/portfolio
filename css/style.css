@@ -1,21 +1,22 @@
 body {
-    background-color: #f4f1ea;
-    color: #14162B;
+    background-color: #F4F1EA;
+    color: #212121;
     font-family: "Open Sans", Arial, sans-serif;
     margin: 0;
 }
 
 h1 {
-    color: #c4531a;
+    color: #C8102E;
     font-size: 40px;
+    text-align: center;
 }
 
 h2 {
     color: #14162B;
 }
 
-a{
-    color: #c4531a;
+a {
+    color: #C8102E;
 }
 
 footer {
@@ -46,7 +47,7 @@ table {
 }
 
 th {
-    background-color: #ff8a4c;
+    background-color: #C8102E;
 }
 
 nav {
@@ -57,7 +58,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #14162B;
+    background-color: #1A1A1A;
     color: white;
     padding: 16px 32px;
 }
@@ -81,7 +82,7 @@ nav a {
 }
 
 .gostos li {
-    background-color: #ff8a4c;
+    background-color: #C8102E;
     padding: 8px 16px;
     border-radius: 20px;
 }
@@ -90,8 +91,19 @@ img {
     max-width: 100%;
 }
 
+.foto-perfil {
+  width: 180px;              /* Define uma largura fixa ideal */
+  height: 180px;             /* Define a altura */
+  object-fit: cover;         /* Ajusta a imagem sem distorcer */
+  border-radius: 50%;        /* Deixa a foto redonda */
+  border: 4px solid #C8102E; /* Borda vermelha temática */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra suave */
+  margin: 20px auto;         /* Centraliza e dá espaço vertical */
+  display: block;
+}
+
 nav a:hover {
-    color: #ff8a4c;
+    color: #C8102E;
 }
 .card:hover {
     transform: translateY(-6px);
@@ -105,24 +117,165 @@ nav a:hover {
 }
 
 .escuro {
-    background-color: #14162B;
+    background-color: #111111;
     color: #f4f1ea;
 }
 
 .escuro .card {
-    background-color: #1f2240;
+    background-color: #1A1A1A;
 }
 
 .escuro h2 {
     color: #f4f1ea;
 }
 
-#resposta {
-    font-weight: bold;
+
+
+
+/* Estilo moderno para o botão de alternar tema */
+#tema {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border: 1px solid #444444;
+  border-radius: 20px; /* Deixa o botão com formato de pílula arredondada */
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Efeito ao passar o rato (hover) com o vermelho temático */
+#tema:hover {
+  background-color: #c8102e;
+  border-color: #c8102e;
+  transform: translateY(-2px); /* Dá um leve salto para cima */
+  box-shadow: 0 4px 10px rgba(200, 16, 46, 0.3);
+}
+
+/* Efeito ao clicar */
+#tema:active {
+  transform: translateY(0);
+}
+
+
+
+
+/* Container principal para centralizar o cartão na página */
+.contato-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+/* O cartão de contacto com o tema escuro */
+.contato-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333333;
+  border-radius: 12px;
+  padding: 40px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.contato-card h2 {
+  color: #c8102e; /* Vermelho temático */
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+/* Organização de cada grupo de campo */
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Estilo moderno para inputs, select e textarea */
+.contato-form input,
+.contato-form select,
+.contato-form textarea {
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 12px;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito ao clicar no campo */
+.contato-form input:focus,
+.contato-form select:focus,
+.contato-form textarea:focus {
+  border-color: #c8102e;
+  box-shadow: 0 0 0 2px rgba(200, 16, 46, 0.2);
+}
+
+.contato-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Botão de Enviar estilizado */
+.btn-enviar {
+  background-color: #c8102e;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #a00d25;
+}
+
+.btn-enviar:active {
+  transform: scale(0.98);
+}
+
+/* Estilo para a mensagem de feedback do JavaScript */
+#resposta {
+  margin-top: 16px;
+  text-align: center;
+  font-weight: 500;
+  color: #4CAF50; /* Verde para sucesso */
+}
+
+#resposta.erro {
+  color: #e53935; /* Vermelho para erro */
+}
+
+
+
+
+
+
 .erro {
-    color:#c0392b;
+    color:#C8102E;
 }
 
 @media (max-width: 600px) {

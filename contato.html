@@ -17,38 +17,43 @@
         <button id="tema">Modo escuro</button>
     </header>
 
-    <main>
-        <section>
-            <h1>Fale comigo</h1>
-        <form id="formulario">
-                 <p>
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome" required>
-                 </p>
-                 <p>
-                        <label for="tel">Telefone</label>
-                        <input type="tel" id="telefone" name="telefone">
-                 </p>
-                 <p>
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required>
-                 </p>
-                 <p>
-                        <label for="assunto">Assunto</label>
-                        <select name="assunto" id="assunto">
-                            <option>Orçamento</option>
-                            <option>Dúvida</option>
-                            <option>Outro</option>
-                        </select>
-                 </p>
-                 <p>
-                        <label for="mensagem">Mensagem</label>
-                        <textarea name="mensagem" id="mensagem"></textarea>
-                 </p>
-                 <button type="submit">Enviar</button>
-                </form>
-                <p id="resposta"></p>
-            </section>
+    <main class="contato-container">
+        <section class="contato-card">
+            <h2>Fale comigo</h2>
+            <form id="formulario" class="contato-form">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="assunto">Assunto</label>
+                    <select name="assunto" id="assunto">
+                        <option value="orcamento">Orçamento</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+            <p id="resposta"></p>
+        </section>
     </main>
 
     <footer>
