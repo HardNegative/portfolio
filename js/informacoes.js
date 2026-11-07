@@ -13,11 +13,9 @@ function criarCard(informacao) {
 }
 
 fetch("infoss.json")
-    .then(function (resposta) {
-        return resposta.json();
-    })
-    .then(function (infoss) {
-        for (const informacao of infoss) {
-            criarCard(informacao);
+    .then(resposta => resposta.json())
+    .then(projetos => {
+        for (const projeto of projetos) {
+            criarCard(projeto);
         }
     });
